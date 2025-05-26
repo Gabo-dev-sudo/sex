@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👄</title>
+    <link rel="stylesheet" href="kei.css">
+    <link rel="icon" href="besandose.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarina&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <p>Kei......</p>
+
+    <audio src="Two Feet - Fire In My Head (Official Lyric Video).mp3" autoplay loop></audio>
+    
+    <div class="content">
+        <img src="florkhot-removebg-preview.png" alt="flork-hot">
+        
+        <div class="text">
+            <p>Un secsito?</p>
+
+            <a href="https://walink.co/4c3f07" class="notrampa">Oki</a>
+
+            <a class="trampa" id="miEnlace" href="" onclick="cambiarUbicacion()">No</a>
+        </div>
+    </div>
+
+
+
+    <script>
+    const link = document.getElementById('miEnlace');
+
+link.addEventListener('click', function(event) {
+  event.preventDefault(); // Evita que el enlace se comporte como un enlace normal
+
+  const windowWidth = window.innerWidth;
+  const windowHeight = window.innerHeight;
+  const linkWidth = link.offsetWidth;
+  const linkHeight = link.offsetHeight;
+
+  const newX = Math.random() * (windowWidth - linkWidth);
+  const newY = Math.random() * (windowHeight - linkHeight);
+
+  link.style.position = 'absolute';
+  link.style.top = newY + 'px';
+  link.style.left = newX + 'px';
+
+  // Opcional: Restaurar la posición después de un tiempo
+  setTimeout(() => {
+    link.style.position = 'absolute';
+    link.style.top = '50%';
+    link.style.left = '50%';
+    link.style.transform = 'translate(-50%, -50%)';
+  }, 2000); // Después de 2 segundos
+});
+    </script>
+
+
+
+
+
+</body>
+</html>
